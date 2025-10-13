@@ -1,5 +1,26 @@
 {% extends "base.html" %}
+
 {% block content %}
-<h1>Welcome to Our Community</h1>
-<p>This is the beginning of something great. Stay tuned for more updates.</p>
+<!-- Hero Section -->
+<section style="text-align:center; padding:4rem 2rem; background-color:#f5f5f5; border-radius:8px; margin-bottom:2rem;">
+    <h1 style="font-size:2.5rem; margin-bottom:1rem;">Welcome to Our Community</h1>
+    <p style="font-size:1.2rem; margin-bottom:1.5rem;">This is the beginning of something great. Stay tuned for more updates.</p>
+    <a href="{{ url_for('article_list') }}" style="display:inline-block; padding:0.75rem 1.5rem; background-color:#007BFF; color:white; text-decoration:none; border-radius:5px; font-weight:bold;">Read Articles</a>
+</section>
+
+<!-- Features Section -->
+<section style="display:flex; justify-content:space-around; flex-wrap:wrap; gap:2rem; margin-bottom:2rem;">
+    <div style="flex:1 1 250px; padding:1.5rem; border:1px solid #ddd; border-radius:8px; text-align:center;">
+        <h2 style="font-size:1.5rem; margin-bottom:0.5rem;">Connect</h2>
+        <p>Meet like-minded people and share ideas in a safe, welcoming space.</p>
+    </div>
+    <div style="flex:1 1 250px; padding:1.5rem; border:1px solid #ddd; border-radius:8px; text-align:center;">
+        <h2 style="font-size:1.5rem; margin-bottom:0.5rem;">Learn</h2>
+        <p>Access resources, guides, and tutorials to help you grow.</p>
+    </div>
+    <div style="flex:1 1 250px; padding:1.5rem; border:1px solid #ddd; border-radius:8px; text-align:center;">
+        <h2 style="font-size:1.5rem; margin-bottom:0.5rem;">Collaborate</h2>
+        <p>Work together on projects, events, and initiatives with other members.</p>
+    </div>
+</section>
 {% endblock %}
