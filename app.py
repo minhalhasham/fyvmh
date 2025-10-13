@@ -1,9 +1,7 @@
-import json
-
-
 from flask import Flask, render_template, abort
 import os
 import markdown
+import json
 
 app = Flask(__name__)
 
