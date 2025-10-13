@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>{{ title }} - Community</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <nav>
+        <a href="{{ url_for('home') }}">Home</a> |
+        <a href="{{ url_for('about') }}">About</a> |
+        <a href="{{ url_for('article_list') }}">Articles</a>
+    </nav>
+    <hr>
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+</body>
+</html>

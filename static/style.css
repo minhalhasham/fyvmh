@@ -1,0 +1,17 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 2em;
+    background: #fefefe;
+    color: #333;
+}
+nav a {
+    text-decoration: none;
+    color: #0077cc;
+    margin: 0 0.5em;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+main {
+    margin-top: 2em;
+}
