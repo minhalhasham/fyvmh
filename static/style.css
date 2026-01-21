@@ -15,3 +15,73 @@ nav a:hover {
 main {
     margin-top: 2em;
 }
+
+/* ===== HERO SECTION ===== */
+.hero {
+    text-align: center;
+    padding: 4rem 2rem;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+}
+
+.hero-images {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;       /* space between images */
+    flex-wrap: wrap;    /* stack on small screens */
+    margin-bottom: 1.5rem;
+}
+
+.hero-images img {
+    height: 200px;      /* constant height for all images */
+    width: auto;        /* scale width automatically to keep aspect ratio */
+    border-radius: 8px;
+}
+
+
+
+.hero-blurb {
+    max-width: 600px;
+    margin: 0 auto 1rem auto;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.cta {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* ===== FEATURES SECTION (if you keep it later) ===== */
+.features {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.feature-card {
+    flex: 1 1 250px;
+    padding: 1.5rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.feature-card img {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 1rem;
+}
